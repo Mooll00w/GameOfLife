@@ -15,7 +15,8 @@
 /*
 We're using MT to create pseudorandom number to create a random table each time
 and have scientific results of it. For a more randomness of the Programm,
-we're using a for to cast 10 number before return the results. ( not really needed)
+we're using a for to cast 10 number before return the results. ( not really
+needed)
 */
 
 int gennombre(int j)
@@ -24,15 +25,16 @@ int gennombre(int j)
 
   int res = 0;
 
-  MTRand r = seedRand(j); // adding the rand() function to create a seed for our MT.
+  MTRand r = seedRand(j); //adding rand() function to create a seed for our MT.
 
   for(int i=0; i<10; i++)
   {
     aleatoire = genRand(&r);
   }
 /*
-Now that we have our number between 1 and 0, we want to have a number equal to 1
-or 0, so if it's between 0 and 0.5 we're returning 0, and above, we're returning 1.
+Now that we have our number between 1 and 0, we want to have a number equal
+to 1 or 0, so if it's between 0 and 0.5 we're returning 0, and above,
+we're returning 1.
 */
 
   if(aleatoire>0.5)
@@ -45,6 +47,6 @@ or 0, so if it's between 0 and 0.5 we're returning 0, and above, we're returning
   }
   else
     return 0;
-    
+
   return res;
 }

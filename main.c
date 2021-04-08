@@ -23,7 +23,10 @@ int main(int argc, char const *argv[]) {
 
   mainMenu(); //Launch the main menu (menu.c)
 
-//afficheJeu(); //if you don't need the menu, "comment" mainMenu() and uncomment this one
+//afficheJeu();
+/*
+if you don't need the menu, "comment" mainMenu()and uncomment this one
+*/
 
   return 0;
 

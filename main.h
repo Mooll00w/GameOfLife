@@ -6,10 +6,12 @@
 // Needed to launch every functions.                                 //
 //                                                                   //
 ///////////////////////////////////////////////////////////////////////
+
 /*
 Testing if we're on Windows or Linux/MacOS, because the fonction CLEAN_SCREEN
 doesn't work the same on each OS. Next we add the needed library for this OS.
 */
+
 #ifdef _WIN32
 #include <Windows.h>
 #define CLEAN_SCREEN "cls"
@@ -23,6 +25,7 @@ doesn't work the same on each OS. Next we add the needed library for this OS.
 /*
 Every functions declaration.
 */
+
 int count_nbr ( int grid[N][N], int i, int j, int size);
 
 int gennombre(int j);

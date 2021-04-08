@@ -2,7 +2,7 @@
 //                                                                   //
 // Project: GameOfLife with Torus Univers ( adding Mersenne_twister )//
 // Made By : Romain Delaire / Thibault Chaix                         //
-// compteur.c                                                            //
+// compteur.c                                                        //
 // Needed to launch every functions.                                 //
 //                                                                   //
 ///////////////////////////////////////////////////////////////////////
@@ -12,12 +12,13 @@
 #include "main.h"
 
 /*
-This part is the most important, it allows us to test every neighbours for each frame
-of the 2D table. And mostly allow us to create the Torus for an infinite Univers
-If the Population is in a corner, we're testing if ( depending on size ) a Population
-already exist and applying GameOfLife to it. And we're using N which is a pre-processing
-number, so we can have a great number for N, the Torus will always work, not depending
-on the N value.
+This part is the most important, it allows us to test every neighbours for each
+frame of the 2D table. And mostly allow us to create the Torus for an infinite
+Univers.
+If the Population is in a corner, we're testing if ( depending on size ) a
+Population already exist and applying GameOfLife to it. And we're using N which
+is a pre-processing number, so we can have a great number for N, the Torus will
+always work, not depending on the N value.
 */
 
 int count_nbr ( int grid[N][N], int i, int j, int size)
